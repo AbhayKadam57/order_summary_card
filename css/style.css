@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.6;
+    
+}
+
+img{
+
+    width: 100%;
+}
+
+.bg-main{
+
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 300px;
+    overflow: auto;
+   
+}
+
+.bg-secondary{
+
+    position: absolute;
+    opacity: 0.5;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+    height: 720px;
+    
+   
+}
+
+.card{
+
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    width: 350px;
+    height: 550px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 80px auto;
+    overflow: hidden;
+    
+ }
+
+ .ilustration{
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+
+ .post-heading{
+
+        font-weight:800;
+        color: hsl(223, 47%, 23%);
+        margin-top: 30px;
+ }
+
+ .post-desc{
+
+    color:hsla(223, 47%, 23%, 0.649);
+    font-size: 14px;
+    width: 280px;
+    margin: 10px auto;
+
+ }
+
+ .text-center{
+
+    text-align: center;
+    justify-content: center;
+ }
+
+ .plan-card{
+    position: relative;
+    margin: auto;
+    top:0px;
+    width:300px;
+    border-radius: 8px;
+    height:80px;
+    background-color:#ebf0ff70; 
+       
+
+ }
+
+ .plan-card .music,
+ .plan-card h4{
+    margin:20px;
+    z-index: 100;
+ }
+
+ .plan-card p{
+
+    margin-top: -20px;
+    margin-bottom: -30px;
+    opacity: 0.5;
+    font-size: 15px;
+ }
+
+ .plan-card a{
+
+    margin: 30px auto;
+    color: #1E1FCD;
+    font-size: 13px;
+    font-weight: bold;
+ }
+
+ .grid{
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    padding: auto;
+ }
+
+
+.btn{
+
+    background-color:#1E1FCD ;
+    color: white;
+    text-decoration: none;
+    font-weight:700;
+    font-size: 13px;
+    padding: 10px 80px;
+    border-radius: 5px;
+    position: relative;
+    top: 30px;
+    box-shadow: 0px 3px 20px #1e1ecd86;
+}
+.cancel{
+
+    position: relative;
+    top: 60px;
+    left: 40%;
+    right: 0;
+    
+}
+
+.cancel a{
+    font-size: 12px;
+    color: hsla(223, 47%, 23%, 0.712);
+    text-decoration: none;
+
+}
+
+.cancel:hover a{
+
+    color: hsla(223, 47%, 23%, 1);
+
+}
+
+.btn:hover{
+
+    opacity: 0.8;
+}
+
+.plan-card a:hover{
+
+    opacity: 0.8;
+}
+
+@media (max-width:376px){
+
+    .bg-main{
+        visibility: hidden;
+        height: 0;
+    }
+
+    .bg-secondary{
+
+        visibility: hidden;
+        height: 0;
+    }
+
+    body{
+
+        background-color:#D5E0FE;
+    }
+}
